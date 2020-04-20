@@ -7,6 +7,7 @@
 - Unizip the folders and delete the original zipfiles.
 - Make sure to move the files into the models folder.
 - Your models folder should look like this:
+```
       ├── models
       │   └── COVIDNet-CXR-Large
       │       ├── checkpoint
@@ -18,3 +19,4 @@
       │           └── variables
       │               ├── variables.data-00000-of-00001
       │               └── variables.index
+```
