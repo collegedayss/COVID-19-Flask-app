@@ -1,5 +1,5 @@
 # COVID-19-Flask-app
-This app utilizes a deep convolutional neural network to detect COVID-19. The model was pretrained from chest radiography images that are open source and available to the general public, and was built by the [COVID-Net Open Source Initiative](https://github.com/lindawangg/COVID-Net). 
+This app utilizes a deep convolutional neural network to detect COVID-19 in chest X-ray images. The model was pretrained from chest radiography images that are open source and available to the general public, and was built by the [COVID-Net Open Source Initiative](https://github.com/lindawangg/COVID-Net). 
 
 ## Getting Started with COVID-19 model
 - Download all the files from the [COVIDNet-CXR-Large](https://drive.google.com/drive/folders/1eNidqMyz3isLjGYN1evzQu--A-JVkzbk) pretrained model.
