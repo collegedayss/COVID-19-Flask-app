@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type='file' onchange="readURL(this);" name="file" />
+        <input type="submit">
+    </form>
+    <img id="blah" src="#" alt="your image" />
+
+    <p>{{ data.content }}</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='upload.js')}}"></script>   
+</body>
+</html>
