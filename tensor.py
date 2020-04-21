@@ -48,7 +48,7 @@ class Inference:
 #
 
 # %%
-model = Inference('models/COVIDNet-CXR-Large', 'model.meta', 'model-8485', '../covid-chestxray-dataset/noCovid.jpeg')
-model.opperate()
+# model = Inference('models/COVIDNet-CXR-Large', 'model.meta', 'model-8485', 'images/testImage.jpeg')
+# model.opperate()
 
-print(model.getPrediction() + '\n' + model.getConfidence())
+# print(model.getPrediction() + '\n' + model.getConfidence())

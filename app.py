@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for
 from werkzeug.utils import secure_filename
 import os
+from tensor import Inference
+
 app = Flask(__name__)
 data = {}
 data["content"] = ""
@@ -18,7 +20,10 @@ def upload_file():
         f = request.files['file']
         print()
         f.save(os.path.join('images/', f.filename))
-        data["content"] = f.filename
+        
+        model = Inference('models/COVIDNet-CXR-Large', 'model.meta', 'model-8485', 'images/' + f.filename)
+        model.opperate()
+        data["content"] = str(model.getPrediction() + ':  ' + model.getConfidence())
     return redirect(url_for('index'))
 
 if __name__ == "__main__":
