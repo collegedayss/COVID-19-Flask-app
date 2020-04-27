@@ -24,3 +24,7 @@ This app utilizes a deep convolutional neural network to detect COVID-19 in ches
       │               ├── variables.data-00000-of-00001
       │               └── variables.index
 ```
+
+## Running the App
+- Open your terminal in this folder and run the following command:
+`python app.py`
